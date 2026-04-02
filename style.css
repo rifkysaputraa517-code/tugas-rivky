@@ -1,0 +1,159 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* NAVBAR */
+nav {
+    background-color: #004d40;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+/* LINK NAV */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+/* HOVER NAV */
+nav a:hover {
+    background-color: #00796b;
+    border-radius: 5px;
+}
+
+/* CUSTOM LINK */
+.home {
+    color: #ffeb3b;
+}
+
+.profile {
+    text-decoration: underline;
+}
+
+.berita {
+    font-weight: bold;
+}
+
+.kontak {
+    font-size: 18px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #26a69a;
+    min-width: 160px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #00796b;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* KIRI */
+.left {
+    width: 20%;
+    background-color: #b2dfdb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* TENGAH */
+.content {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* GAMBAR */
+.content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* KANAN */
+.right {
+    width: 20%;
+    background-color: #b2dfdb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* LIST LINK */
+.right a {
+    text-decoration: none;
+    color: #004d40;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #004d40, #00251a);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE (HP) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .content, .right {
+        width: 100%;
+    }
+}
